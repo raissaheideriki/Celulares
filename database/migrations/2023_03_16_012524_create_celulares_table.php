@@ -17,10 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('marca', 100);
             $table->date('ano');
-            $table->decimal('valor', $precision = 8, $scale = 2);
+            $table->decimal('valor', 8, 2);
             $table->date('garantia');
-            $table->string('descrição', 100);
+            $table->text('descrição', 100);
             $table->string('processador', 100);
+            $table->integer('memória ram');
+            $table->string('sistema operacional', 100);
 
             $table->timestamps();
         });
