@@ -16,10 +16,18 @@
                 <tr class="table-dark">
                     <th>Nome</th>
                     <th>Cor</th>
-                    <th>Sexo</th>
-                    <th></th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                </tr>
+                @foreach ($celulares as $celular)
+                <tr>
+                    <td>{{ $celular->nome }}</td>
+                    <td>{{ $celular->cor }}</td>
+                    <td>{{ $celular->modelo }}</td>
+                    <td>{{ $celular->ano }}</td>
                 </tr>
 
+                @endforeach
             </table>
         </div>
 
